@@ -1,0 +1,68 @@
+{
+  "name": "phenomic-plugin-transform-asciidoc",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ezralalonde/phenomic-plugin-transform-asciidoc.git"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "license": "BSD-3-Clause",
+  "authors": [
+    "Ezra Lalonde"
+  ],
+  "keywords": [
+    "static",
+    "website",
+    "generator",
+    "compiler",
+    "phenomic",
+    "phenomic-plugin",
+    "asciidoc",
+    "asciidoctor"
+  ],
+  "description": "Asciidoctor.js transformer for Phenomic 1.0",
+  "scripts": {
+    "build": "babel src --optional runtime --out-dir lib",
+    "fix": "prettier --no-semi --write src/*js",
+    "clean-up": "git reset && echo '/node_modules/' > .gitignore && git add .gitignore && git stash save --include-untracked --keep-index '`npm run clean-up` trash can' && git clean --force -d && git reset --hard && echo '\nclean-up: All unstaged and ignored files within your git repo – except node_modules/* – have been moved to the stash. To restore them run `git stash pop --quiet; git checkout .gitignore`."
+  },
+  "main": "lib/index.js",
+  "files": [
+    "lib"
+  ],
+  "babel": {
+    "presets": [
+      "env",
+      "stage-1",
+      "flow"
+    ],
+    "plugins": [
+      "babel-plugin-transform-runtime"
+    ]
+  },
+  "dependencies": {
+    "asciidoctor.js": "^1.5.6-preview.3",
+    "babel-cli": "^6.26.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-flow": "^6.23.0",
+    "babel-preset-stage-1": "^6.24.1",
+    "cheerio": "^1.0.0-rc.2",
+    "debug": "^3.0.1",
+    "flow-bin": "^0.54.1",
+    "lodash.deburr": "^4.1.0",
+    "lodash.kebabcase": "^4.1.1",
+    "lowlight": "^1.9.1",
+    "rehype": "^5.0.0"
+  },
+  "peerDependencies": {
+    "@phenomic/core": "^1.0.0-alpha.7"
+  },
+  "devDependencies": {
+    "@phenomic/core": "^1.0.0-alpha.7",
+    "prettier": "^1.7.0"
+  }
+}
