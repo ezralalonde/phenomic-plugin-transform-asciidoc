@@ -21,10 +21,12 @@ transform `ad`, `adoc`, and `asciidoc` files from Asciidoc to Html.
 - [x] Supports [Phenomic](https://www.phenomic.io) 1.0
 - [x] Converts Asciidoc files to Html using [Asciidoctor.js](https://github.com/asciidoctor/asciidoctor.js)
 - [x] Highlights code samples using [Lowlight](https://github.com/wooorm/lowlight)
+- [x] Supports `ad`, `adoc`, and `asciidoc` file extensions
+- [x] Available on [npm](https://www.npmjs.com/package/phenomic-plugin-transform-asciidoc) and [github](https://github.com/ezralalonde/phenomic-plugin-transform-asciidoc)
 
 ## Contribute
 
-PRs accepted. :beer:
+Pull requests welcome. :beer:
 
 ## License
 
