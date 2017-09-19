@@ -5,7 +5,7 @@ transform [Phenomic](https://www.phenomic.io) content—Asciidoc in, Html out.
 
 ## Installation
 
-1. Add to [Phenomic](https://www.phenomic.io 1.0) project using npm.
+1. Add to [Phenomic 1.0](https://www.phenomic.io) project using npm.
 
        npm i --save phenomic-plugin-transform-asciidoc
 
