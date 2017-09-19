@@ -5,7 +5,7 @@ transform [Phenomic](https://www.phenomic.io) content—Asciidoc in, Html out.
 
 ## Installation
 
-1. Add to [Phenomic](https://www.phenomic.io) 1.0 project using npm.
+1. Add to [Phenomic](https://www.phenomic.io 1.0) project using npm.
 
        npm i --save phenomic-plugin-transform-asciidoc
 
@@ -18,7 +18,7 @@ transform [Phenomic](https://www.phenomic.io) content—Asciidoc in, Html out.
 
 ## Features
 
-- [x] Supports [Phenomic](https://www.phenomic.io) 1.0
+- [x] Works with [Phenomic](https://www.phenomic.io 1.0)
 - [x] Converts Asciidoc files to Html using [Asciidoctor.js](https://github.com/asciidoctor/asciidoctor.js)
 - [x] Highlights code samples using [Lowlight](https://github.com/wooorm/lowlight)
 - [x] Supports `ad`, `adoc`, and `asciidoc` file extensions
