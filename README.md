@@ -1,7 +1,7 @@
 # phenomic-plugin-transform-asciidoc
 
 Uses [Asciidoctor.js](https://github.com/asciidoctor/asciidoctor.js) to
-transform `ad`, `adoc`, and `asciidoc` files from Asciidoc to Html.
+transform [Phenomic](https://www.phenomic.io) content—Asciidoc input, Html output.
 
 ## Installation
 
